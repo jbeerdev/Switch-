@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<database name="switch_db" version="1">
+    <table name="task" to-string="%title%">
+        <field name="name" obligatory="true" size="128" type="text" />
+        <field foreign-table="categories" name="category_id" type="foreign-key" />
+    </table>
+     <table name="task" to-string="%title%">
+        <field name="name" obligatory="true" size="128" type="text" />
+        <field foreign-table="categories" name="category_id" type="foreign-key" />
+    </table>
+    <table backup="no" name="categories" to-string="%name%">
+        <field name="name" obligatory="true" size="128" type="string-identifier" />
+    </table>
+</database>
