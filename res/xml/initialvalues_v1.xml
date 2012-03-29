@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<values>
+
+    <row
+        id="1"
+        table="categories" >
+        <field
+            name="name"
+            value="Trabajo" />
+    </row>
+    <row
+        id="2"
+        table="categories" >
+        <field
+            name="name"
+            value="Viajes" />
+    </row>
+    <row
+        id="3"
+        table="categories" >
+        <field
+            name="name"
+            value="Amigos" />
+    </row>
+    
+    <row
+        id="1"
+        table="sub_categories" >
+        <field
+            name="name"
+            value="Tren" />
+        <field
+            name="category_id"
+            value="2" />
+    </row>
+    
+    <row
+        id="2"
+        table="sub_categories" >
+        <field
+            name="name"
+            value="Coche" />
+        <field
+            name="category_id"
+            value="2" />
+    </row>
+
+</values>

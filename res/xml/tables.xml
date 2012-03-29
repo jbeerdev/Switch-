@@ -1,14 +1,60 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<database name="switch_db" version="1">
-    <table name="task" to-string="%title%">
-        <field name="name" obligatory="true" size="128" type="text" />
-        <field foreign-table="categories" name="category_id" type="foreign-key" />
+<database
+    name="switch_db"
+    version="3" >
+
+    <table
+        name="task"
+        to-string="%title%" >
+        <field
+            name="name"
+            obligatory="true"
+            size="128"
+            type="text" />
+        <field
+            name="sub_category_id"
+            foreign-table="sub_categories"
+            type="foreign-key" />
     </table>
-     <table name="task" to-string="%title%">
-        <field name="name" obligatory="true" size="128" type="text" />
-        <field foreign-table="categories" name="category_id" type="foreign-key" />
+    <table
+        name="categories"
+        to-string="%title%" >
+        <field
+            name="name"
+            obligatory="true"
+            size="128"
+            type="text" />
     </table>
-    <table backup="no" name="categories" to-string="%name%">
-        <field name="name" obligatory="true" size="128" type="string-identifier" />
+    <table
+        name="sub_categories"
+        to-string="%title%" >
+        <field
+            name="name"
+            obligatory="true"
+            size="128"
+            type="text" />
+        <field
+            name="category_id"
+            foreign-table="categories"
+            type="foreign-key" />
+    </table>
+    <table
+        name="task_aggregates"
+        to-string="%title%"
+        new-in-version="3" >
+        <field
+            name="task_date"
+            obligatory="true"
+            size="128"
+            type="text" />
+         <field
+            name="task_time"
+            obligatory="true"
+            size="128"
+            type="integer" />
+        <field
+            name="sub_category_id"
+            foreign-table="sub_categories"
+            type="foreign-key" />
     </table>
 </database>
