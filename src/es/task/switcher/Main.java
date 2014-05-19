@@ -1,9 +1,10 @@
 package es.task.switcher;
 
 
+import android.app.Activity;
 import android.os.Bundle;
 
-public class Main extends DataFrameworkActivity {
+public class Main extends Activity {
     /** Called when the activity is first created. */
    
 	@Override
