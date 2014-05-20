@@ -8,9 +8,9 @@ import com.mobandme.ada.annotations.TableField;
 public class Task extends Entity{
 
 	@TableField(name = "name", datatype = DATATYPE_STRING)
-	public String Name = "";
+	public String name = "";
 
 	@TableField(name = "category", datatype = DATATYPE_ENTITY)
-	public Category Category = null;
+	public Category category = null;
 	
 }

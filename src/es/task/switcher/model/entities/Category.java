@@ -8,6 +8,6 @@ import com.mobandme.ada.annotations.TableField;
 public class Category extends Entity{
 
 	@TableField(name = "name", datatype = DATATYPE_STRING, maxLength = 100)
-	public String Name  = "";
+	public String name  = "";
 	
 }
