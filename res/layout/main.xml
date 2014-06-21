@@ -4,9 +4,23 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="46dp"
+            android:onClick="showPopup"
+            android:src="@drawable/ic_launcher"
+            android:layout_gravity="right" />
+
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/task_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
 
 </LinearLayout>
